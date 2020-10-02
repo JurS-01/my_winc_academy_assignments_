@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <header>
+        <h1>Contact</h1>
+        <h2>My first website</h2>
+    </header>
+    <nav>
+        <ul>
+            <li class="white-color linav"><a class="white-color" href="index.html">Home</a></li>
+            <li class="white-color linav"><a class="white-color" href="about.html">Over</a></li>
+            <li class="white-color linav"><a class="white-color" href="news.html">Nieuws</a></li>
+            <li class="white-color linav"><a class="white-color" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p class="black-border center-margin">
+        <div class="formContainer">
+            <form name="contact" method="POST" data-netlify="true" class="contact">
+                <label>naam <input type="text" name="naam"></label><br><br>
+                <label>email <input type="email" name="email"></label><br><br>
+                <label>telefoonnummer <input type="tel" name="phone"></label><br><br>
+                <label>leeftijd <input type="number" name="age"></label><br><br>
+                <label>geboortedatum <input type="date" name="dateOfBirth"></label><br><br>
+                <label>man<input type="radio" name="gender" class="man"></label>
+                <label>vrouw<input type="radio" name="gender" class="vrouw"></label><br><br>
+                <label>frans<input type="checkbox" name="cuisine" class="frans"></label>
+                <label>italiaans<input type="checkbox" name="cuisine" class="italiaans"></label>
+                <label>spaans<input type="checkbox" name="cuisine" class="spaans"></label>
+                <label>arabisch<input type="checkbox" name="cuisine" class="arabisch"></label><br><br>
+                <label>favoriete kleur van short <input type="color" name="shortColor"
+                        class="shortColor"></label><br><br>
+                <textarea name="bio" id="bio" cols="30" rows="6" placeholder="biografie:"></textarea><br><br>
+                <label>laatste recept <input type="file" name="recipe" class="recipe"></label><br><br>
+                <input type="url" name="website" placeholder="jouw website"><br><br>
+                <button type="reset">clear form</button><br><br>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+        </p>
+    </main>
+    <footer>
+        <p>
+        <ul> voor vragen kun je altijd contact opnemen via <br><br>
+            <li class="white-color">tel: 01-23456789</li>
+            <li class="white-color">mail: 123@emailen.org</li>
+        </ul>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+  }
+
+/*MOBILE*/
+
+.gridContainer1 {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 2fr 1fr 9fr 2fr 2fr;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(82, 82, 82);
+    text-shadow: 3px 3px 6px white;
+}
+
+.header {
+    /*background-color: rgb(53, 53, 180);*/
+    background: linear-gradient(to right, rgb(53, 53, 180), rgb(214, 217, 250) /* #00ff6c*/);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.main {
+   padding: 60px 150px 60px 60px;
+}
+
+.aside {
+    background-color: rgb(247, 218, 218);
+}   
+
+.footer {
+    background-color: rgb(53, 53, 180);
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    padding: 10px 30px ;
+    text-align: end;
+}  
+
+.nav {
+    background-color: rgb(102, 115, 250);
+    background-image: url("actie3.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;	
+}  
+
+.mainH1 {
+    text-shadow: 4px 4px 3px rgb(29, 29, 29);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.mainH2 {
+    margin-top: -8px;
+    text-shadow: 4px 4px 3px rgb(80, 80, 80);
+    color: rgb(238, 238, 238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav ul{
+list-style-type: none;
+}
+
+.linav{
+    font: 18px bold Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 8px;
+}
+
+
+.linav:hover{
+    background-color: rgb(53, 53, 180);
+    border: 1px solid white;
+    color: blue;
+}
+
+.navLink{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-shadow: rgb(29, 29, 29);
+}
+
+img{
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px grey;
+}
+
+p {
+    font-family: myFirstFont Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: gray;
+}
+
+.capoeiraPic {
+    width: 250px;       
+}
+
+.proeflesApplyContainer1 {
+    background-color: rgb(198, 198, 233);
+    padding: 20px;
+    width: fit-content;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    box-shadow: 4px 4px 4px grey;
+}
+
+.proeflesApplyContainer2{ 
+    display: inline-block;
+    background-color: rgb(198, 198, 233);
+    height: fit-content;
+}
+
+.btn1 {
+    background-color: rgb(20, 196, 20);
+    border-radius: 6px;
+    color: white;
+    padding: 8px;    
+}
+
+.btnLink1 {
+    color: white;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    background-color: rgb(90, 240, 90);
+}
+
+.reclameContainer{
+    display: flex;
+    padding: 14px 8px;
+}
+
+.reclamePic{
+    margin-right: 9px;
+}
+
+.reclamePar span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form {
+    border: 1px solid grey;
+    padding: 20px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 7px;
+    margin: 20px 0px;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form label, form input {
+    margin: 10px;
+}
+
+iframe{
+    margin: 20px 0px;
+}
+
+.gridContainer3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1024px) {
+    
+    p {           
+        font-size: 20px;
+    }
+
+    .gridContainer1{
+        grid-template-areas: 
+        "a a a"
+        "e e c"
+        "b b c"
+        "b b c"
+        "d d d";
+        grid-template-columns: 4fr 2fr 1fr;
+    }    
+    .header {
+        grid-area: a;
+    }
+    
+    .main {
+        grid-area: b;
+        grid-row: auto;
+    }
+    
+    .aside {
+        grid-area: c;
+        grid-row: auto;
+    }   
+    
+    .footer {
+        grid-area: d;
+    }  
+    .nav {
+        grid-area: e;
+        grid-row: auto;
+        text-align: end;
+    }
+    .reclameContainer{
+        display: block;
+    }
+    .capoeiraPic {
+        width: max-content;       
+    }
+    nav ul{
+        padding-right: 25px;
+    }
+    .linav{
+        display: inline;
+    }
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+    .flexContainerContact {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-column-gap: 10px;
+        
+    }
+    .flexContainerContact form {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .flexContainerContact textarea {
+        width: 90%;
+    }
+    .gridContainer2 {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: 4fr 1fr;
+        margin-top: 20px;
+    }
+    .gridContainer3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 3px;
+    }
+
+@media (min-width:1200px){
+    .gridContainer1{
+    grid-template-areas: 
+    "a a a"
+    "e b c"
+    "e b c"
+    "e b c"
+    "d d c";
+    grid-template-columns: 1fr 14fr 3fr;
+    }
+    .linav{
+        display: normal;
+        font: 18px bold Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0px 8px;
+    }
+}

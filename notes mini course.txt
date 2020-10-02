@@ -1,0 +1,103 @@
+Winc Mini Course Notes
+
+link to other page in different folder			"dir1/page3.html"
+
+------------
+HTML5 outliner checker:					https://gsnedders.html5.org/outliner/
+Semantic HTML						geeft betekenis aan de verschillende html elementen
+
+<article>						are essentially mini web pages in your HTML document. They have their own headers, footers, and document outline that are 
+							completely isolated from the rest of your site. It should only wrap content that can be plucked out of your page and distributed 
+							in a completely different context. For instance, an app like Flipboard should be able to grab an <article> element from your site, 
+							display it in its own app, and have it make perfect sense to its readers.
+
+<section>						sort of like an <article>, except it doesn’t need to make sense outside the context of the document. That is, an app like Flipboard 
+							wouldn’t try to pull out all the <section>’s of your page and present them as independent pieces of content.
+							note that each <section> element should contain at least one heading, otherwise it will add an “untitled section” to your document 
+							outline.
+							Our advice is to only use <section> as a more descriptive <div> wrapper for the implicitly defined sections of your page. Don’t use 
+							it for self-contained content (that’s what <article> is for) or when it’s purely for layout purposes.
+Header+footer						only associated with the nearest sectioning element—typically a <body>, <section>, or <article> element. This means that you can use 
+							multiple <header> elements to add introductory content to different parts of a document. For instance, the title, author, and 
+							publication date of our <article> is a pretty good candidate for another <header>
+<address> 						element is like <time> in that it doesn’t deal with the overall structure of a document, but rather embellishes the parent <article> 
+							or <body> element with some metadata. It defines contact information for the author of the article or web page in question. 
+							<address> should not be used for arbitrary physical addresses.
+------------
+WIREFRAMING - BALSAMIQ
+
+The Software Process
+1. Identify problem (Product Manager )
+2. Design solution (Designer)
+3. Build it (Developer)
+
+How GOOD software gets made
+1. Identify problem (Product Manager )
+2. Understand problem (whole team, problem and agree) UX
+3. Design solution (Designer and UX) 
+4. Plan and communicate solution (UX)
+5. Build it (Developer)
+
+
+UX designer bridge gap between idea and code
+Wireframes are both design and communication tool
+
+PRototypes are a realistic representation of product, often used for testing, come later in process then wireframe, final checkpoint before developing
+
+diffrence wireframe prototpes
+Wireframe
+- for communication and ideation
+- fast / 'cheap'
+- rough
+
+prototype
+- presentation, selling
+- time-consuming, 'espensive'
+- polished
+
+----------------
+input field ook altijd een name meegeven, belangrijk voor JS
+
+----------------
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  		one area never smaller then 100px, but columns always auto-fit full-width of screen
+
+grid-auto-rows: 100px;		when screen-width changes you get different amount of rows. this makes sure the height is always 100px.
+
+
+grid-auto-flow: dense;		auto fulls up empty spaces with screen-with change, by changing the order of areas. changes order in html lay out
+
+---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

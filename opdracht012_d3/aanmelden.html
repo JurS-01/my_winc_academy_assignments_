@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Aanmelden Capoeirales</title>
+</head>
+
+<body>
+    <div class="gridContainer1">
+        <header class="header">
+            <h1 class="mainH1">CAPOEIRASCHOOL NEDERLAND</h1>
+            <h2 class="mainH2">VOOR IEDEREEN</h2>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li class="linav"><a class="navLink" href="index.html">HOME</a></li>
+                <li class="linav"><a class="navLink" href="over.html">OVER</a></li>
+                <li class="linav"><a class="navLink" href="aanmelden.html">AANMELDEN</a></li>
+                <li class="linav"><a class="navLink" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <img src="actie2.jpg" alt="capoeira training" class="capoeiraPic">
+            <h2>Meld je aan voor een gratis proefles</h2>
+            <p>Lorem ipsum soluta amet laborum qui doloremque dolorem animi expedita, corrupti impedit ipsam
+                numquam consectetur ut incidunt, placeat voluptates magnam eum voluptatum.</p>
+            <form name="aanmelden" method="POST" data-netlify="true">
+                <label>Naam <input type="text" name="naam"></label><br>
+                <label>Email <input type="email" name="email"></label><br>
+                <label>leeftijd <input type="number" name="leeftijd"></label><br>
+                Niveau:<br>
+                <label>beginner <input type="radio" name="ervaring"></label>
+                <label>intermediate <input type="radio" name="ervaring"></label>
+                <label>gevorderd <input type="radio" name="ervaring"></label><br>
+                Locatie:<br>
+                <label>Amsterdam <input type="checkbox" name="amsterdam"></label>
+                <label>Leiden <input type="checkbox" name="leiden"></label>
+                <label>Utrecht <input type="checkbox" name="utrecht"></label><br>
+                <label>Datum<input type="date" name="datum"></label><br>
+                <textarea name="opmerkingen" cols="30" rows="10" placeholder="opmerkingen:"></textarea><br>
+                <button type="submit" class="btn1">VERSTUUR</button>
+            </form>
+        </main>
+        <aside class="aside">
+            <div class="reclameContainer"><img src="1reclame.jpg" alt="holiday" width="130px" class="reclamePic">
+                <p class="reclamePar">
+                    <span>Reclame 1</span><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente
+                    quibusdam
+                    at voluptatum dolor assumenda molestiae nam quasi nulla laborum!</p>
+            </div>
+            <div class="reclameContainer"><img src="2reclame.jpg" alt="holidays" width="130px" class="reclamePic">
+                <p class="reclamePar">
+                    <span>Reclame 2</span><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente
+                    quibusdam
+                    at voluptatum dolor assumenda molestiae nam quasi nulla laborum!</p>
+            </div>
+        </aside>
+        <footer class="footer">
+            copywrite@jurianCoding
+        </footer>
+    </div>
+</body>
+
+</html>
