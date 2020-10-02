@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script defer type="module" src="script1.js"></script>
+    <title>Movie Finder</title>
+</head>
+
+<body>
+    <header class="header">
+        <h2>Superhero & Princess</h2>
+        <h1>Movie Finder</h1>
+        <nav class="header--filters">
+            <form id="selectFilter">
+                <label for="All">
+                    <input type="radio" name="radio" class="radio-filter" id="All" value="All">
+                    All</label>
+                <label for="New">
+                    <input type="radio" name="radio" class="radio-filter" id="New" value="New">
+                    New</label>
+                <label for="Avengers">
+                    <input type="radio" name="radio" class="radio-filter" id="Avengers" value="Avengers">
+                    Avengers</label>
+                <label for="X-Men">
+                    <input type="radio" name="radio" class="radio-filter" id="X-Men" value="X-Men">
+                    X-Men</label>
+                <label for="Princess">
+                    <input type="radio" name="radio" class="radio-filter" id="Princess" value="Princess">
+                    Princess</label>
+                <label for="Batman">
+                    <input type="radio" name="radio" class="radio-filter" id="Batman" value="Batman">
+                    Batman</label>
+            </form>
+            <form id="search-form">
+                <input type="text" name="searchField" placeholder="search movie" id="search">
+                <input type="submit" id="search-btn" value="Submit">
+            </form>
+        </nav>
+    </header>
+    <main class="list-container">
+        <ul id="movie-list-ul">
+        </ul>
+    </main>
+
+</body>
+
+</html>
