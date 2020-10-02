@@ -1,0 +1,31 @@
+body {
+    background: burlywood;
+}
+
+#list-ul,
+#matches-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* #list-ul, #matches-ul {
+    -webkit-column-count: 3;  /* Chrome, Safari, Opera 
+    -moz-column-count: 3;     /* Firefox 
+    column-count: 3;
+  } */
+/* 
+column-count possible instead of grid for vertical direction .sort in JS 
+could also use toggle in JS to switch css id/class depending in which button is clicked
+because matchmaking button seems to be better with horizontal direction .sort
+*/
+
+#country-selector-btns li {
+    list-style: none;
+    display: inline;
+}
+
+.btn {
+    background: rgb(133, 133, 133);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
