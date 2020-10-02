@@ -1,0 +1,7 @@
+A. Request Body* = F4 
+B. Response Headers = B1 
+C. HTTP Status Code = B2 
+D. Verb = F3 
+E. Response Body* = B3 
+F. Request Headers = F1 
+G. URI = F2
