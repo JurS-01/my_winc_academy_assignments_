@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #c3cfe2;
+  font: bold 20px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.testimonial {
+  width: 450px;
+  margin: 50px auto;
+  border: 0.5px solid lightgrey;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 4px #5a5a5a;
+          box-shadow: 1px 1px 4px #5a5a5a;
+}
+
+.testimonial--white {
+  background: #fff;
+  height: 370px;
+  padding: 45px;
+  color: #646464;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.testimonial--white p {
+  text-align: start;
+}
+
+.testimonial--white img {
+  border-radius: 100%;
+  border: 6px solid white;
+  width: 140px;
+  margin: 30px auto -150px;
+}
+
+.testimonial--purple {
+  background: #686de0;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  color: white;
+  height: 190px;
+}
+
+.testimonial--purple h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  padding-top: 75px;
+}
+
+.testimonial--purple a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=styles.css.map */

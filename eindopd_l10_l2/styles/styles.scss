@@ -1,0 +1,32 @@
+@import "./media-queries.scss";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container { 
+    &__grid-item {
+        width: 100%;
+        margin: 10px;
+        padding: 50% 40%;
+        background: url("../images/luigi.jpg");
+        transition: background 0.6s ease 0.2s;
+        background-size: cover;
+        border-radius: 20px;
+        & button {
+            border-radius: 5px;
+            padding: 3px;
+            width: max-content;
+            opacity: 0;
+            transition: opacity 0.6s ease 0.2s;
+        }
+        &:hover {
+            background: rgb(53, 53, 53);
+            & button {
+            opacity: 1;
+            }
+        }
+    } 
+}
