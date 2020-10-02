@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <h2>Stel een vraag</h2>
+        <hr>
+        <nav>
+            <ul class="headerNavigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main class="black-border">
+        <h3>Neem contact op via het contactformulier</h3>
+        <form name="contact" method="POST" data-netlify="true">
+            <label>naam <input type="text" name="naam" required></label><br>
+            <label>email <input type="email" name="email" required></label><br>
+            <label>telefoonnummer <input type="tel" name="telefoonnummer"></label><br>
+            <label>leeftijd <input type="number" name="leeftijd"></label><br>
+            <label>geboortedatum <input type="date" name="geboortedatum"></label><br>
+            <label>man <input type="radio" name="geslacht"></label>
+            <label>vrouw <input type="radio" name="geslacht"></label><br>
+            favoriete cuisine:
+            <label>frans <input type="checkbox" name="frans"></label>
+            <label>italiaans <input type="checkbox" name="italiaans"></label>
+            <label>spaans <input type="checkbox" name="spaans"></label>
+            <label>arabisch <input type="checkbox" name="arabisch"></label><br>
+            <label>favoriete kleur van short <input type="color" name="shortkleur"></label><br>
+            <textarea name="vraag" cols="30" rows="10" placeholder="Biografie:"></textarea><br>
+            <label>upload je laatste recept <input type="file" name="recept"></label><br>
+            <label>website recepten <input type="url" name="website"></label><br>
+            <input type="reset" name="reset"><br>
+            <button type="submit" class="btnHeader">VERSTUUR</button>
+        </form>
+    </main>
+    <footer id="green-background" class="black-border">copywrite@jurian</footer>
+</body>
+
+</html>

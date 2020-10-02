@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic A1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Galindo" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Doe mee</title>
+</head>
+
+<body>
+    <main class="total-container">
+        <header class="header">
+            <div class="logo">
+                <h1 class="header-heading"><a href="index.html">POOLLICHT</a></h1>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <button class="btn-header">
+                            <li class="header-nav-item"><a href="index.html">HOME</a></li>
+                        </button>
+                        <button class="btn-header">
+                            <li class="header-nav-item"><a href="fotos.html">FOTOS</a></li>
+                        </button>
+                        <button class="btn-header">
+                            <li class="header-nav-item"><a href="about.html">FUN FACTS</a></li>
+                        </button>
+                        <button class="btn-header">
+                            <li class="header-nav-item"><a href="contact.html">MEEDOEN</a></li>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section-main">
+            <div class="topform-container">
+                <div class="inner-container-top">
+                    <h1>STUUR ONS JOUW VETSTE FOTO</h1><br><br><br>
+                    <p class="head-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore
+                        ipsa sint iure
+                        reprehenderit
+                        modi, vel accusamus repellat. Debitis Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eum,
+                        necessitatibus!</p>
+                </div>
+            </div>
+            <div class="foto-formulier-container">
+                <h1 class="fotos-heading-top">FORMULIER</h1>
+                <form name="foto-form" method="post" data-netlify="true" class="foto-formulier">
+                    <label>Naam <input type="text" name="naam" required></label><br>
+                    <label>Email <input type="email" name="email" required></label><br>
+                    <label>leeftijd <input type="number" name="leeftijd"></label><br>
+                    <label>locatie foto <input type="text" name="locatie" required></label><br>
+                    <label>Datum foto<input type="date" name="datum"></label><br>
+                    <label>Fotograaf:</label><label>professioneel<input type="radio" name="ervaring"></label>
+                    <label>hobby<input type="radio" name="ervaring"></label><br>
+                    <textarea name="opmerkingen" cols="30" rows="10" placeholder="opmerkingen:"></textarea><br>
+                    <label>Upload foto <input type="file" name="foto"></label><br>
+                    <label>Ja, ik ontvang graag meer informatie over
+                        poollicht<input type="checkbox" name="email list"></label><br><br>
+                    <button type="submit" class="body-btn">VERSTUUR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@copywriteJurS</p>
+    </footer>
+</body>
+
+</html>

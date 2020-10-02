@@ -1,0 +1,8 @@
+$boxShadow: rgba(0, 0, 0, 0.75);
+$sectionTwoBG: #97d279;
+$paddingBase: 20px;  
+@mixin textStyleSct(){
+    max-width: 700px;
+    text-align: center;
+    padding: $paddingBase;
+} 

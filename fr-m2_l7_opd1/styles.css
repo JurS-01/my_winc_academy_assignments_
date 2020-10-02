@@ -1,0 +1,47 @@
+.link1:hover {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.link2:active {
+    color: red;
+    font-style: italic;
+}
+
+.link3:visited {
+    color: yellow;
+}
+
+.green-input:focus {
+    color: green;
+    font-size: 20px;
+}
+
+nav {
+    background: darkblue;
+    padding: 1px 8px 1px 0px;
+    margin-top: 10px;
+    text-align: end;
+}
+
+li {
+    display: inline;
+    margin: 7px;
+}
+
+li:hover {
+    background-color: lightblue;
+}
+
+li a { 
+    color: white;
+    text-decoration: none;
+}
+
+.currentPage {
+    background: rgb(36, 36, 61);
+}
+
+.search:focus {
+    border-color: aqua;
+}

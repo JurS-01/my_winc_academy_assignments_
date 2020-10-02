@@ -1,0 +1,83 @@
+@import "./constants";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $colorBackground;
+    ;
+}
+
+/* Social Buttons */
+
+.socials {
+    position: fixed;
+    right: -255px;
+    bottom: 40px;
+    list-style: none;
+    color: $colorSocialBox;
+    width: 300px;
+    &__box {
+        padding: 10px;
+        position: relative;
+        &:hover {
+            animation-name: stretch;
+            animation-duration: 0.6s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+        }
+        & a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $colorSocialBox;
+            padding: 40px;
+            }
+        &--laptop {
+            background: #e17b77;
+        }
+        &--twitter {
+            background: #00aced;
+        }
+        &--linkedin {
+            background: #007bb6;
+        }
+        &--facebook {
+            background: #3b5998;
+        }
+        &--github {
+            background: #333;
+        }
+        & .laptop::before {
+            font-family: "Font Awesome 5 Free"; font-weight: $IconFontWeight; content: "\f5fc";
+          }
+        & .linkedin::before {
+            font-family: "Font Awesome 5 Brands"; font-weight: $IconFontWeight; content: "\f0e1";
+          }
+        & .twitter::before {
+            font-family: "Font Awesome 5 Brands"; font-weight: $IconFontWeight; content: "\f099";
+          }
+        & .facebook::before {
+            font-family: "Font Awesome 5 Brands"; font-weight: $IconFontWeight;content: "\f39e";
+          }
+        & .github::before {
+            font-family: "Font Awesome 5 Brands"; font-weight: $IconFontWeight; content: "\f09b";
+          }
+        & .icon::before {
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            font-size: 1.5rem;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+          }
+    }
+
+}
+
+
+
+
+
+
