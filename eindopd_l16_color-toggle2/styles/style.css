@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font: bold 30px verdana;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    text-transform: uppercase;
+}
+
+.navbar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background: #b1b1b1;
+    -webkit-transition: right 0.6s ease-out;
+    transition: right 0.6s ease-out;
+}
+
+.navbar img {
+    width: 50px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.navbar__list {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar__list__item {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.navbar__list__color {
+    padding: 2px 8px;
+    border: 1px solid grey;
+    margin-left: 3px;
+}
+
+.navbar__list--blue {
+    background-color: blue;
+}
+
+.navbar__list--red {
+    background-color: red;
+}
+
+.navbar__list--green {
+    background-color: green;
+}
+
+.navbar__list--orange {
+    background-color: orange;
+}
+
+.navbar__list--yellow {
+    background-color: yellow;
+}
+
+.navbar__list--purple {
+    background-color: purple;
+}
+
+.navbar__list--pink {
+    background-color: pink;
+}
+
+.show-navbar {
+    right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

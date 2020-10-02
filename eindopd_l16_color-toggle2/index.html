@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script defer src="script.js"></script>
+    <title>Color Toggle</title>
+</head>
+
+<body id="body">
+    <h1 class="body__color-description">blue</h1>
+    <div class="container">
+        <nav class="navbar">
+            <img src="hamburger_menu_icon.png" alt="menu">
+            <ul class="navbar__list">
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('blue')" checked id="blue"><span
+                        class="navbar__list__color navbar__list--blue"></span>
+                    blue</li>
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('red')" id="red"><span
+                        class="navbar__list__color navbar__list--red"></span> red
+                </li>
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('green')" id="green"><span
+                        class="navbar__list__color navbar__list--green"></span>
+                    green</li>
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('orange')" id="orange"><span
+                        class="navbar__list__color navbar__list--orange"></span> orange</li>
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('yellow')" id="yellow"><span
+                        class="navbar__list__color navbar__list--yellow"></span> yellow</li>
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('purple')" id="purple"><span
+                        class="navbar__list__color navbar__list--purple"></span> purple</li>
+                <li class="navbar__list__item"><input type="radio" name="radio" class="navbar__list__radio"
+                        onclick="changeBackground('pink')"><span class="navbar__list__color navbar__list--pink"></span>
+                    pink</li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>
