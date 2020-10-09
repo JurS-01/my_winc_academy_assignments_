@@ -114,7 +114,7 @@ document.getElementsByClassName('old-cards-btn')[0].addEventListener('click', li
 
 // 4. MEESTE MENSEN
 
-const getPopulationCountries = () => {
+const getCountryPopulation = () => {
     clearAll(), sortByRegion(randomPersonData), addDescription('Number of clients per country')
     const allCountries = randomPersonData.map(person => person.region)
     let uniqueCountries = [...new Set(allCountries)];
@@ -122,25 +122,25 @@ const getPopulationCountries = () => {
     countDuplicates.sort((a, b) => b[1] - a[1]);
     countDuplicates.forEach(countryCount => addList(mainList, `${countryCount[0]} (${countryCount[1]})`));
 }
-document.getElementsByClassName('country#-btn')[0].addEventListener('click', getPopulationCountries)
+document.getElementsByClassName('country#-btn')[0].addEventListener('click', getCountryPopulation)
 
 
 
 //  5. GEMIDDELDE LEEFTIJD
 
-const addCountryButtonsToDom = () => {
+const addCountryButtons = () => {
     clearAll(), addDescription('Average age per country'), sortByRegion(randomPersonData);
     const uniqueRegions = removeDuplicates(randomPersonData, person => person.region);
     uniqueRegions.forEach(person => addList(countrySelectorContainer, `<button class="age-country-btn">${person.region}</>`))
     const countryButtons = document.querySelectorAll('.age-country-btn')
     countryButtons.forEach(button => button.addEventListener('click', getAverageAge))
 }
-document.getElementsByClassName('average-age-btn')[0].addEventListener('click', addCountryButtonsToDom)
+document.getElementsByClassName('average-age-btn')[0].addEventListener('click', addCountryButtons)
 
 
-const getAverageAge = () => {
+const getAverageAge = (e) => {
     clearMainList()
-    const countryBtn = event.target
+    const countryBtn = e.target
     const locals = randomPersonData.filter(person => person.region === countryBtn.innerText)
     const allAgesInCountry = locals.map(person => Number(person.age))
     const averageAge = Math.round(allAgesInCountry.reduce((a, b) => a + b) / allAgesInCountry.length);
@@ -151,7 +151,7 @@ const getAverageAge = () => {
 
 /// 6. MATCHMAKING
 
-const addAllUsersToDom = () => {
+const addAllUsers = () => {
     clearAll(), sortByName(randomPersonData), addDescription(`Select person to find matches`);
     randomPersonData.forEach(person => {
         addList(mainList, `${person.name} ${person.surname}<br>${person.region}<br>
@@ -161,13 +161,13 @@ const addAllUsersToDom = () => {
     const findMatchButtons = document.querySelectorAll('.find-match-btn')
     findMatchButtons.forEach(button => button.addEventListener('click', findMatch))
 }
-document.getElementsByClassName('matchmaking-btn')[0].addEventListener('click', addAllUsersToDom)
+document.getElementsByClassName('matchmaking-btn')[0].addEventListener('click', addAllUsers)
 
 
-const findMatch = () => {
+const findMatch = (e) => {
     clearAll(), addDescription('Selected person')
-    addList(mainList, `${event.target.parentElement.innerHTML}<br><br><br><h3>Matches found</h3>`)
-    const selectedValues = event.target.value.split('/');
+    addList(mainList, `${e.target.parentElement.innerHTML}<br><br><br><h3>Matches found</h3>`)
+    const selectedValues = e.target.value.split('/');
     randomPersonData.forEach(person => {
         if (getZodiacSign(person.birthday.dmy) === selectedValues[0] && person.gender != selectedValues[1]) {
             addList(listMatches, `${person.name} ${person.surname}<br>${person.region}<br>${person.gender}<br>
