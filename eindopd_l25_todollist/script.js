@@ -4,9 +4,11 @@ import { deleteTaskFromServer } from './api-client.js'
 import { changeTasks } from './api-client.js'
 
 
-/* Probleempunten:
+/* 
 Ik zit alleen nog met onderstaande punten waar ik niet uitkom. Deze vragen heb ik ook uitgezet in slack. Zodra ik meer input krijg, 
 zal ik deze punten nog aanpasen. De opdracht heb ik wel alvast ingeleverd, zodat ik ondertussen verder kan met het volgende level via Git. 
+
+Probleempunten:
 - waarom krijgen na refresh alle tasks automatisch een line-through? En hoe voorkom ik dat?
 - Waarom werkt the Put API om de done-status te wijzigen via de checkbox alleen de eerste keer? Daarna wijzigt de status op de API niet meer mee.
 */
