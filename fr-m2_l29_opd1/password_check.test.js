@@ -1,5 +1,5 @@
 /*
-We hebben de volgende condities die we gebruiken:
+Condities:
 1 - password is korter dan 9 karakters
 2 - password is niet null
 3 - password heeft 1 of meer uppercase karakters
@@ -11,18 +11,10 @@ Een wachtwoord wordt alléén goedgekeurd als:
 - conditie 4 true is (die moet dus altijd true zijn)
 */
 
+const { conditions } = require("./password_check.js");
+const { minimumConditionsReached } = require("./password_check.js");
+const { verifyPassword } = require("./password_check.js");
 
-// isNotNull, hasRightLength, hasDigit, hasUpperCaseCharacter, hasLowerCaseCharacter
-// minimumConditionsReached, verifyPassword
-//////////////////////////////////////////////////////
-
-
-const conditions = require("./password_check.js");
-// const hasRightLength = require("./password_check.js");
-// const hasDigit = require("./password_check.js");
-// const isNotNull = require("./password_check.js");
-// const hasUpperCaseCharacter = require("./password_check.js");
-// const hasLowerCaseCharacter = require("./password_check.js");
 
 test("has more then 2 and less than 9 characters", () => {
     const password1 = "SmileLots44&8"
@@ -30,7 +22,6 @@ test("has more then 2 and less than 9 characters", () => {
     const password3 = ""
     const password4 = "e4"
 
-    // expect(hasRightLength(password1)).toBeFalsey();
     expect(conditions.hasRightLength(password1)).not.toBe(true); // Fail
     expect(conditions.hasRightLength(password2)).toBe(true); // Pass
     expect(conditions.hasRightLength(password3)).not.toBe(true); // Fail
@@ -108,7 +99,7 @@ test("at least 3 conditions are met", () => {
     expect(minimumConditionsReached(password7)).toBe(true); // Pass
     expect(minimumConditionsReached(password8)).toBe(true); // Pass
     expect(minimumConditionsReached(password9)).toBe(true); // Pass
-    expect(minimumConditionsReached(password10)).toBe(true); // Pass
+    expect(minimumConditionsReached(password10)).not.toBe(true); // Fail
 
 });
 
@@ -132,9 +123,10 @@ test("at least 3 conditions are met and has lower case character", () => {
     expect(verifyPassword(password4)).not.toBe(true); // Fail
     expect(verifyPassword(password5)).toBe(true); // Pass
     expect(verifyPassword(password6)).toBe(true); // Pass
-    expect(verifyPassword(password7)).toBe(true); // Pass
+    expect(verifyPassword(password7)).not.toBe(true); // Fail
     expect(verifyPassword(password8)).not.toBe(true); // Pass
     expect(verifyPassword(password9)).toBe(true); // Pass
     expect(verifyPassword(password10)).not.toBe(true); // Pass
 
 });
+
